@@ -1,15 +1,22 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import React, {useEffect} from "react";
+import {getFeedPosts} from "../store/actions/actions";
+import {State} from '../interfaces';
+import Layout from "../components/Layout";
+import {useDispatch, useSelector} from 'react-redux';
+import Feed from "../components/Feed/Feed";
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+export default function MainPage() {
 
-export default IndexPage
+    const posts = useSelector<State, State['posts']>((State) => State.posts);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(getFeedPosts());
+    }, [posts])
+
+    return (
+        <Layout title="Home page | all Posts">
+            {posts ? <Feed data={posts}/> : ''}
+        </Layout>
+    )
+}

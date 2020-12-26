@@ -5,17 +5,35 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "prettier": "prettier --write ./**/*.tsx"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "next": "latest",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "redux-wrapper": "0.0.1",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
+    "@types/react-redux": "^7.1.14",
+    "@types/styled-components": "^5.1.7",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
+    "babel-plugin-styled-components": "^1.12.0",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "next-redux-wrapper": "^6.0.2",
+    "prettier": "^2.2.1",
+    "redux-devtools-extension": "^2.13.8",
     "typescript": "4.0"
   },
   "license": "MIT"
