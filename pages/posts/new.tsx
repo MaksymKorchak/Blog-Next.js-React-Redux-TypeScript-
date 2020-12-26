@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Layout from "../../components/Layout";
+import Layout from "../../components/Layout/Layout";
 import {BUTTON, DIV, INPUT, SPAN, TEXTAREA} from "../../components/FeedItemInfo/FeedItemInfoStyled";
 import {useDispatch} from "react-redux";
 import {createFeedPost} from "../../store/actions/actions";

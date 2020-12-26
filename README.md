@@ -2,6 +2,9 @@
 
 This project shows the usage of [Next.js](https://nextjs.org/) SSR, [React](https://reactjs.org/), [Redux](https://redux.js.org/) with [TypeScript](https://www.typescriptlang.org/) and [styled-components](https://styled-components.com/).
 
+Link to Project - <https://blog-next-js-react-redux-type-script.vercel.app/>
+
+
 ##In project you can run
 
 #### Install:

@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
-import {LayoutProps} from "../interfaces";
-import {A, NAV} from "./LayootStyled";
+import {LayoutProps} from "../../interfaces";
+import {A, NAV} from "./LayoutStyled";
 
 const Layout:React.FC<LayoutProps>=({children,title='Posts app'})=>(
     <div>

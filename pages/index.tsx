@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import {getFeedPosts} from "../store/actions/actions";
 import {State} from '../interfaces';
-import Layout from "../components/Layout";
+import Layout from "../components/Layout/Layout";
 import {useDispatch, useSelector} from 'react-redux';
 import Feed from "../components/Feed/Feed";
 
